@@ -1,1 +1,2 @@
 # Emotional-Design
+This website is part of my DIGIT 400 course. It looks at how digital products use emotional design to affect how people think and behave in both helpful and harmful ways. The guide will cover positive and human-centered emotional design, manipulative or harmful emotional design, emotional design theory and psychology, and real-world examples and UX case studies. The goal is to show when emotional design is used to support users and when it starts to become manipulative.
