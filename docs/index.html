@@ -11,9 +11,42 @@
         <header class="site-header">
             <div class="wrap">
                 <h1>Emotional Design in Digital Products</h1>
-                
             </div>
         </header> 
+        <input type="checkbox" id="welcome-modal" class="visually-hidden modal-toggle" aria-hidden="true" />
+        <div class="modal" aria-labelledby="modal-title">
+            <label for="welcome-modal" class="modal-backdrop" aria-hidden="true"></label>
+            <div class="modal-card">
+                <h2 id="modal-title" class="modal-h2">Quick demo: Helpful vs Pushy</h2>
+                <section class="emotion-switch" aria-labelledby="switch-title-modal">
+                    <h3 id="switch-title-modal" class="visually-hidden">Helpful vs Pushy Example</h3>
+                    <input type="checkbox" id="mode2" class="visually-hidden" aria-hidden="true" />
+                    <div class="tabs" aria-label="Example mode">
+                        <label for="mode2" class="tab helpful-tab">Helpful</label>
+                        <label for="mode2" class="tab pushy-tab">Pushy</label>
+                    </div>
+                    <div class="card example-card" aria-live="polite">
+                       
+                        <div class="view helpful">
+                            <h4 class="demo-h4">Would you like to subscribe?</h4>
+                            <p>Get product tips occasionally. You can unsubscribe anytime.</p>
+                            <div class="actions vertical">
+                                <button type="button" class="btn primary">Subscribe</button>
+                                <label for="welcome-modal" class="btn ghost full">No thanks</label>
+                            </div>
+                        </div>
+                        <div class="view pushy">
+                            <label for="welcome-modal" class="close-x" aria-label="Close pop-up">×</label>
+                            <h4 class="demo-h4">Hurry, last chance! Subscribe now</h4>
+                            <p>Only a few spots left. You can opt-out later in settings.</p>
+                            <div class="actions">
+                                <button type="button" class="btn primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section> 
+            </div> 
+        </div> 
         <div class="layout">
             <aside class="sidebar">
                 <nav class="list" aria-label="Section navigation">
@@ -38,7 +71,7 @@
                     Understanding emotional design is important especially for future designers and developers because emotions can influence decisions more strongly than information alone.
                 </p>
                 <section id="positive" class="card">
-                    <h2>Positive &amp; Human-Centered Emotional Design</h2>
+                    <h2> Positive &amp; Human-Centered Emotional Design</h2>
                 </section>
                 
                 <section id="manipulative" class="card">
