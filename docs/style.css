@@ -360,3 +360,35 @@ a:hover { text-decoration: underline; }
   .sticky-wall { flex-direction: column; align-items: center; }
   .sticky { width: 90%; transform: none; }
 }
+
+.app-preview {
+  display: block;
+  text-align: center;
+  background: var(--card-bg, #fff);
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  margin-block: 1rem;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.app-preview img {
+  display: block;
+  width: 100%;
+  height: auto;         
+  max-width: 600px;     
+  aspect-ratio: auto;   
+  object-fit: contain;  
+  border-radius: 10px;
+  margin: 0 auto .75rem;
+}
+
+.app-preview .title { font-weight: 600; margin: 0 0 .25rem; }
+.app-preview .meta  { color: #555; line-height: 1.4; margin: 0; }
+
+@media (max-width: 600px) {
+  .app-preview { text-align: left; }
+  .app-preview img { max-width: 100%; }
+}
