@@ -18,35 +18,40 @@
             <label for="welcome-modal" class="modal-backdrop" aria-hidden="true"></label>
             <div class="modal-card">
                 <h2 id="modal-title" class="modal-h2">Quick demo: Helpful vs Pushy</h2>
+                
                 <section class="emotion-switch" aria-labelledby="switch-title-modal">
                     <h3 id="switch-title-modal" class="visually-hidden">Helpful vs Pushy Example</h3>
+                    
                     <input type="checkbox" id="mode2" class="visually-hidden" aria-hidden="true" />
+                    
                     <div class="tabs" aria-label="Example mode">
                         <label for="mode2" class="tab helpful-tab">Helpful</label>
                         <label for="mode2" class="tab pushy-tab">Pushy</label>
                     </div>
+                    
                     <div class="card example-card" aria-live="polite">
-                       
+                    
                         <div class="view helpful">
                             <h4 class="demo-h4">Would you like to subscribe?</h4>
                             <p>Get product tips occasionally. You can unsubscribe anytime.</p>
                             <div class="actions vertical">
-                                <button type="button" class="btn primary">Subscribe</button>
+                                <button type="button" class="btn primary" onclick="closeAndConfetti()">Subscribe</button>
                                 <label for="welcome-modal" class="btn ghost full">No thanks</label>
                             </div>
                         </div>
+                     
                         <div class="view pushy">
                             <label for="welcome-modal" class="close-x" aria-label="Close pop-up">×</label>
                             <h4 class="demo-h4">Hurry, last chance! Subscribe now</h4>
                             <p>Only a few spots left. You can opt-out later in settings.</p>
                             <div class="actions">
-                                <button type="button" class="btn primary">Subscribe</button>
+                                <button type="button" class="btn primary" onclick="closeAndConfetti()">Subscribe</button>
                             </div>
                         </div>
-                    </div> 
-                </section> 
-            </div> 
-        </div> 
+                    </div>
+                </section>
+            </div>
+        </div>
         <div class="layout">
             <aside class="sidebar">
                 <nav class="list" aria-label="Section navigation">
@@ -135,14 +140,172 @@
                 
                 <section id="manipulative" class="card">
                     <h2>Manipulative or Harmful Emotional Design</h2>
+                    <p>
+                        Emotional design becomes harmful when it uses feelings like guilt,
+                        fear, or fake urgency to push people into choices they did not plan
+                        to make. Articles like <em>The Elegant Deception of UX</em> and 
+                        <em>User Manipulation: Thinking Beyond Dark Patterns</em> describe 
+                        how “nice” looking interfaces can still trap people into bad experiences. 
+                        The problem is not emotion itself but how it is used.
+                    </p>
+                    
+                    <p>
+                        Common harmful emotional patterns include:
+                    </p>
+                    <ul class="pill-list">
+                        <li><strong>Confirmshaming</strong> – the “No, I hate saving money” style buttons.</li>
+                        <li><strong>False urgency</strong> – countdown timers that reset or are not real.</li>
+                        <li><strong>Forced continuity</strong> – free trials that are hard to cancel.</li>
+                        <li><strong>Hostile design</strong> – layouts that hide the “skip” or “opt out” option.</li>
+                    </ul>
+                    
+                    <div class="inline-note bad-note">
+                        <h3>Why this matters</h3>
+                        <p>
+                            These designs don’t just annoy people. They can cause stress,
+                            break trust, and make users feel tricked. Once that happens, the
+                            brand feeling becomes negative even if the product works well.
+                        </p>
+                    </div>
+                    
+                    <h3>Reflection</h3>
+                    <p>Reading about dark UX made me realize that manipulation is not always loud. 
+                        It can hide in small details like button labels, color choices, and the way 
+                        options are ordered. This section is a reminder that emotional influence can 
+                        affect people in ways they do not expect, and it should be used with care and 
+                        honesty. People can feel pressured even when the interface looks friendly. Small 
+                        choices can shape how confident or confused someone feels in a moment. Emotional
+                        design should guide people gently instead of pushing them toward something they 
+                        did not plan.
+                    </p>
+                    
+                    <h3>Quick self-check for designers</h3>
+                    <ul>
+                        <li>Would I be okay if this flow was used on a close friend or family member?</li>
+                        <li>Can a user clearly say “no” without searching or feeling guilty?</li>
+                        <li>Is the emotion I am triggering helpful for the user, or only helpful for the business?</li>
+                    </ul>
                 </section>
                 
                 <section id="theory" class="card">
                     <h2>Emotional Design Theory &amp; Psychology</h2>
+                        <p>
+                            Emotional design is not just vibes. It is linked to psychology and
+                            how the brain handles stress, attention, and memory. Don Norman’s
+                            work on <em>visceral, behavioral, and reflective</em> levels of
+                            design explains why some products feel “right” from the first
+                            second, while others only grow on us over time.
+                        </p>
+                        
+                        <ul class="pill-list">
+                            <li>
+                                <strong>Visceral level</strong> – the first reaction.
+                                Colors, icons, motion, and typography.
+                            </li>
+                            <li>
+                                <strong>Behavioral level</strong> – how easy it is to use.
+                                Clear feedback, simple flows, and forgiving errors.
+                            </li>
+                            <li>
+                                <strong>Reflective level</strong> – how we think about it later.
+                                Does using this product fit who I want to be?
+                            </li>
+                        </ul>
+                        
+                        <p>
+                            The <em>Aesthetic–Usability Effect</em> shows that people judge
+                            attractive interfaces as easier to use, even when the tasks are the
+                            same. Jon Yablonski’s <em>Laws of UX</em> connects this idea with
+                            patterns like Hick’s Law (too many choices create stress) and the
+                            Peak-End Rule (people remember the emotional “peak” and the ending
+                            of an experience).
+                        </p>
+                        
+                        <div class="inline-note">
+                            <h3>Design takeaway</h3>
+                            <p>A helpful way to think about emotional design is to ask three quick questions:
+                                <strong>What does this look like at first sight?</strong>
+                                <strong>How does it feel to use step by step?</strong>
+                                and
+                                <strong>What story will the user tell about it later?</strong>
+                                These three layers connect directly to Norman’s theory and help explain why 
+                                both visuals and function matter in shaping the final experience.
+                            </p>
+                        </div>
+                        
+                        <h3>Suggested reading path</h3>
+                        <ol>
+                            <li>
+                                Start with Norman’s “Emotion &amp; Design: Attractive Things Work Better”
+                                for the basic idea.
+                            </li>
+                            <li>
+                                Then read “Emotional Design: An Overview” for a broader picture.
+                            </li>
+                            <li>
+                                Follow up with “Laws of UX” to see how psychology becomes design rules.
+                            </li>
+                        </ol>
                 </section>
                 
                 <section id="cases" class="card">
                     <h2>Real-World Examples &amp; UX Case Studies</h2>
+                    <p>
+                        This section walks through a few real and research-based examples.
+                        The goal is not to judge the whole app, but to notice how emotional
+                        choices shape the experience.
+                    </p>
+                    
+                    <div class="case-grid">
+                        <article class="case-card good">
+                            <h3>Language learning apps (supportive streaks)</h3>
+                            <p>
+                                Apps like Duolingo use streaks, progress bars, and friendly
+                                characters to keep people motivated. When used gently, this
+                                gamification can make a hard task feel playful and rewarding.
+                            </p>
+                            <p class="case-tip">
+                                <strong>Good practice:</strong> celebrate progress without
+                                shaming users when they miss a day.
+                            </p>
+                        </article>
+                        
+                        <article class="case-card mixed">
+                            <h3>Shopping sites with timers</h3>
+                            <p>
+                                Some e-commerce sites use countdown clocks and “Only 1 left!”
+                                messages. Sometimes these are true, but sometimes they are just
+                                pressure tricks. This can create anxiety instead of confidence.
+                            </p>
+                            <p class="case-tip">
+                                <strong>Better approach:</strong> be honest about stock and
+                                timing. Real limits are okay; fake ones break trust.
+                            </p>
+                        </article>
+                        
+                        <article class="case-card good">
+                            <h3>Mental health or wellness apps</h3>
+                            <p>
+                                Many wellness apps use soft colors, simple check-ins, and
+                                supportive copy like “You are doing your best today.” This is
+                                emotional design focused on care. It tries to lower stress
+                                instead of raising it.
+                            </p>
+                            <p class="case-tip">
+                                <strong>Key idea:</strong> when a topic is sensitive, gentle
+                                writing and clear privacy choices matter more than “growth
+                                hacks.”
+                            </p>
+                        </article>
+                    </div>
+                    
+                    <h3>How to read these cases</h3>
+                    <ul>
+                        <li>Notice what feelings are being used: pride, fear, guilt, joy?</li>
+                        <li>Ask who benefits most from those feelings: the user, or the company?</li>
+                        <li>Think about how you would redesign the flow to keep the emotion,
+                            but remove the pressure.</li>
+                    </ul>
                 </section>
                 
                 <section id="zotero" class="card">
@@ -184,5 +347,18 @@
                 </section>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <script>
+      function closeAndConfetti() {
+        const modalCheckbox = document.getElementById("welcome-modal");
+        modalCheckbox.checked = true;
+
+        confetti({
+          particleCount: 200,
+          spread: 75,
+          origin: { y: 0.6 }
+        });
+      }
+    </script>
     </body>
 </html>

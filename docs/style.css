@@ -392,3 +392,118 @@ a:hover { text-decoration: underline; }
   .app-preview { text-align: left; }
   .app-preview img { max-width: 100%; }
 }
+
+.inline-note,
+.bad-note {
+  margin: 12px 0 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fff7f3;
+  border: 1px solid #ffe6db;
+}
+
+.bad-note {
+  background: #ffeef0;
+  border-color: #ffc4ce;
+}
+
+.inline-note h3,
+.bad-note h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.pill-list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pill-list li {
+  background: #fff4ef;
+  border: 1px solid #ffe6db;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: .95rem;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-block: 14px;
+}
+
+.case-card {
+  background: #fffdfc;
+  border: 1px solid #ffe6db;
+  border-radius: 14px;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+.case-card.good {
+  background: #f4fff7;
+  border-color: #c4f1d0;
+}
+
+.case-card.mixed {
+  background: #fffdf1;
+  border-color: #ffe7ad;
+}
+
+.case-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.case-tip {
+  margin-top: 6px;
+  font-size: .9rem;
+  color: #5b6270;
+}
+
+.app-preview .title { 
+  font-size: 1rem; 
+  font-weight: 700; 
+}
+
+.app-preview .meta  { 
+  font-size: .92rem; 
+  color: #555; 
+}
+
+.card h3 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 800;
+}
+
+.sticky-wall {
+  margin-top: 1rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.example-card {
+  padding: 12px 0;
+}
+
+.view p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .actions.vertical button.btn.primary {
+    width: 100%;
+  }
+}
