@@ -133,8 +133,13 @@
                     
                     <h3>Recommended Resources</h3>
                     <ul>
-                        <li><a href="https://learning.oreilly.com/library/view/laws-of-ux/9781098146955/" target="_blank" rel="noopener">Laws of UX – O’Reilly</a></li>
-                        <li><a href="https://link-springer-com.ezaccess.libraries.psu.edu/book/10.1007/978-3-030-29868-5" target="_blank" rel="noopener">User Experience Is Brand Experience – Springer</a></li>
+                       
+                        <li><a href="https://learning.oreilly.com/library/view/laws-of-ux/9781098146955/" target="_blank" rel="noopener">Laws of UX – O’Reilly (2020)</a>
+                            <p>Read this if you want to understand why certain designs naturally feel right to people. 
+                                It breaks down psychology into simple rules you can actually use in real interfaces.</p></li>
+                        <li><a href="https://link-springer-com.ezaccess.libraries.psu.edu/book/10.1007/978-3-030-29868-5" target="_blank" rel="noopener">User Experience Is Brand Experience – Springer (2019)</a>
+                            <p>Read this if you want to see how emotion shapes the way people connect with a brand. 
+                                It explains how trust, clarity, and calm design become part of a product’s identity.</p></li>
                     </ul>
                 </section>
                 
@@ -158,6 +163,27 @@
                         <li><strong>Forced continuity</strong> – free trials that are hard to cancel.</li>
                         <li><strong>Hostile design</strong> – layouts that hide the “skip” or “opt out” option.</li>
                     </ul>
+                 
+                    <div class="interactive-demo card">
+                        <h3>Interactive Example: Hostile Design</h3>
+                        <p>Try to click “No.” Some interfaces make the choice physically difficult.</p>
+                        
+                        <div style="margin-top:1em; display:flex; gap:1em;">
+                            <button class="btn primary">Yes</button>
+                            <button id="runBtn" class="btn ghost">No</button>
+                        </div>
+                        
+     <!-- Used both websites to help me figure this out: https://www.w3schools.com/jsref/event_onmouseover.asp 
+         and https://stackoverflow.com/questions/77770326/how-to-create-a-button-that-runs-away-from-the-cursor -->               
+                        <script>
+        const runBtn = document.getElementById("runBtn");
+        runBtn.addEventListener("mouseover", () => {
+            const x = Math.random() * 100;
+            const y = Math.random() * 40;
+            runBtn.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+                    </div>
                     
                     <div class="inline-note bad-note">
                         <h3>Why this matters</h3>
@@ -234,18 +260,31 @@
                         </div>
                         
                         <h3>Suggested reading path</h3>
-                        <ol>
-                            <li>
-                                Start with Norman’s “Emotion &amp; Design: Attractive Things Work Better”
-                                for the basic idea.
-                            </li>
-                            <li>
-                                Then read “Emotional Design: An Overview” for a broader picture.
-                            </li>
-                            <li>
-                                Follow up with “Laws of UX” to see how psychology becomes design rules.
-                            </li>
-                        </ol>
+                    <ol>
+                        <li>
+                            Start with Norman’s 
+                            <a href="https://jnd.org/emotion-design-attractive-things-work-better/" target="_blank" rel="noopener">
+                                “Emotion &amp; Design: Attractive Things Work Better” (2008)
+                            </a>
+                            for the basic idea.
+                        </li>
+                        
+                        <li>
+                            Then read 
+                            <a href="https://uxdesign.cc/emotional-design-an-overview-2d93c6f03da8" target="_blank" rel="noopener">
+                                “Emotional Design: An Overview” (Feng Zhou)
+                            </a>
+                            for a broader picture.
+                        </li>
+                        
+                        <li>
+                            Follow up with 
+                            <a href="https://learning.oreilly.com/library/view/laws-of-ux/9781098146955/" target="_blank" rel="noopener">
+                                “Laws of UX” (2020)
+                            </a>
+                            to see how psychology becomes design rules.
+                        </li>
+                    </ol>
                 </section>
                 
                 <section id="cases" class="card">
@@ -317,7 +356,7 @@
                         </a>
                     </p>
                 </section>
-                
+                <!-- https://www.w3schools.com/w3css/w3css_cards.asp helped with how to make the "sticky note cards" -->
                 <section id="shoutouts" class="card sticky-wall">
                     <h2>Shout-Outs: Key Resources I Recommend</h2>
                     <article class="sticky">
@@ -360,5 +399,16 @@
         });
       }
     </script>
+        <footer class="footer">
+            <p>
+                <a href="https://temiii857.github.io/Emotional-Design/">Emotional Design Guide</a>
+                © 2025 by 
+                <a href="https://example.com">Temitope Sakote</a> 
+                is licensed under 
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC icon" style="max-width: 1em; max-height: 1em; margin-left: .2em;"/>
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY icon" style="max-width: 1em; max-height: 1em; margin-left: .2em;"/>
+            </p>
+        </footer>
     </body>
 </html>
