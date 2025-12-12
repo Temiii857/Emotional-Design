@@ -169,20 +169,30 @@
                         <p>Try to click “No.” Some interfaces make the choice physically difficult.</p>
                         
                         <div style="margin-top:1em; display:flex; gap:1em;">
-                            <button class="btn primary">Yes</button>
+                            <button id="yesBtn" class="btn primary">Yes</button>
                             <button id="runBtn" class="btn ghost">No</button>
                         </div>
                         
      <!-- Used both websites to help me figure this out: https://www.w3schools.com/jsref/event_onmouseover.asp 
          and https://stackoverflow.com/questions/77770326/how-to-create-a-button-that-runs-away-from-the-cursor -->               
                         <script>
-        const runBtn = document.getElementById("runBtn");
-        runBtn.addEventListener("mouseover", () => {
-            const x = Math.random() * 100;
-            const y = Math.random() * 40;
-            runBtn.style.transform = `translate(${x}px, ${y}px)`;
+    const runBtn = document.getElementById("runBtn");
+    const yesBtn = document.getElementById("yesBtn");
+
+    runBtn.addEventListener("mouseover", () => {
+        const x = Math.random() * 100;
+        const y = Math.random() * 40;
+        runBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    yesBtn.addEventListener("click", () => {
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.7 }
         });
-    </script>
+    });
+</script>
                     </div>
                     
                     <div class="inline-note bad-note">
